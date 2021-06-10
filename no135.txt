@@ -27,6 +27,7 @@ public:
     }
     // 每一个和自己的右边比较
     int k;
+    // suncun: 这里j不能为0么?
     for(int j = sizes-2; j < 0; --j){
         if(ratings[j] > ratings[j+1]){
             num[j] = max(num[j+1] + 1,num[j]);//如果已经多了 就不改 没多就后者加1
